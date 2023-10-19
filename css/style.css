@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    /* position:relative; */
+    width: 100%;
+    height: auto;
+    background-image:linear-gradient(rgba(44,41,39,0.85), rgba(44,41,39,0.85)), url('../images/hero-bg.jpg'); /* Always remeber to give path of Image */
+    background-size: cover !important; /*Write this If background image did'nt show*/ 
+    background-repeat: no-repeat;
+}
+.banner .background-overlay{
+    background-color: #2c2927;
+    opacity: 0.85;
+    /* transition: background 0.3s, border-radius 0.3s, opacity 0.3s; */
+}
+/****************************************************************************/
+                 /* Navbar  Styling */
+/****************************************************************************/
+.navbar {
+    padding: 0 1rem;
+}
+
+.navbar-sec {
+    display: flex ; 
+    /* justify-content: space-between; */
+    height: 5rem;
+    gap: 11.5rem;
+    align-items: center;
+}
+/* Navbar Styling */
+
+.nav-link:link,          /* Use  Pseudo-classes here i.e. :link , :visited , :hover , :active etc. */
+.nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    transition:all 0.3s;
+}
+.nav-link:hover,
+.nav-link:active{
+    font-size: 1rem;
+    font-weight:600;
+    color: #f3d97a;
+}
+.navbar-nav a{
+    font-family: 'Poppins',sans-serif;
+    font-size: 0.9rem;
+}
+/* ******************* Styling for Responsive Navbar***************** */
+
+.mobile_navbar_btn{
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.nav_icon{
+    width:4rem;
+    height:4rem;
+    color: #3d5f00;
+    border: 2.5px solid;
+    margin: 1rem;
+}
+
+.nav_icon[name="close-outline"] {
+    display: none;
+}
+
+/* ******************* End Styling for Responsive Navbar***************** */
+
+.banner-heading{
+    font-family: 'DM Serif Display',serif;
+    font-size: 4rem;
+    padding: 5rem 5rem;
+    color: #fff;
+    margin-bottom: 0!important;
+}
+.banner-para{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.5rem;
+    padding: 0px 4rem 5rem 45rem;
+    line-height: 1.7rem;
+    color: #ffff;
+}
+.find-out {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #fff;
+    padding-left: 35rem;
+    padding-bottom: 3rem;
+}
+.find-out h5{
+    margin: 0!important;
+    padding-left: 1rem;
+}
+
+ /****************************************************************************/ 
+              /* Hire Us Section */ 
+ /****************************************************************************/ 
+
+.hire-us {
+    background-color: #f2f1e5;
+    padding: 2rem 0 2rem 0;
+}
+
+.main-heading{
+    font-family: 'DM Serif Display',serif;
+    font-size: 3.5rem;
+    color: #2c2927;
+    margin-bottom: 2.5rem;
+}
+.heading{
+    font-family: 'DM Serif Display',serif;
+    font-size: 2rem;
+    padding: 1rem 0  2rem 0;
+    color: #2c2927;
+    margin-bottom: 0!important;
+}
+.para{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.24rem;
+    line-height: 1.7rem;
+    color: #534a45;
+    margin: 0rem 0 2rem 0rem!important;
+}
+
+/****************************************************************************/ 
+             /* About Us Section */ 
+/****************************************************************************/ 
+.about-us{
+    background-color: #fbe8a6;
+    padding: 2rem 0 2rem 0;
+}
+.details-sec{
+    padding: 5rem 5rem 5rem 0;
+}
+.about-us img{
+    width: 100%;
+    height: auto;
+}
+.image-sec{
+    padding: 10rem 0rem 5rem 0rem;
+}
+/****************************************************************************/ 
+             /* Why Choose Us Section */ 
+/****************************************************************************/ 
+
+.choose-us{
+    background-color: #f2f1e5;
+    padding: 5rem 0 2rem 0;
+}
+.choose-us .main-heading{
+    font-family: 'DM Serif Display',serif;
+    font-size: 3.5rem;
+    color: #2c2927;
+    margin-bottom: 2.5rem;
+}
+.choose-us h5{
+    font-family: 'Poppins',sans-serif;
+    color:#534a45 ;
+    margin-bottom: 2.5rem;
+    font-size:1.2rem;
+    font-weight: 600;
+}
+.unorderd-list .para{
+    margin-bottom: 0!important;
+}
+
+/****************************************************************************/ 
+             /* How can we help you? */ 
+/****************************************************************************/ 
+.help-sec{
+    background-color:#fbe8a6;
+    padding: 2rem 1rem 2rem 1rem;
+}
+.card-sec{
+    padding-left: 0;
+    padding-right: 0;
+}
+.card-sec .card{
+    background-color:#fbe8a6;
+}
+.card-sec h5{
+    font-family: 'DM Serif Display',serif;
+    color: #2c2927;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+.card-sec p{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.card-button{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 1.5rem 0 2rem 0;
+}
+.card-button a{
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #fbe8a6;
+    color: #000;
+    border:1.9px solid #000;
+    border-radius: 0%;
+    text-align: center;
+}
+
+.card-details-sec{
+    padding: 5rem 4.5rem 5rem 4.5rem;
+    text-align: center;
+    font-weight: 400;
+    color: #534a4b;
+}
+
+/****************************************************************************/ 
+             /*  What Our Clients Say  */ 
+/****************************************************************************/ 
+
+.client-sec{
+    background-color: #f2f1e5;
+    padding: 1.5rem;
+}
+.client-sec .main-heading {
+    text-align: left!important;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+.col-sec {
+    padding: 0 5rem 0 0;
+    font-family: 'Poppins',sans-serif;
+    color: #534a45; 
+}
+.star-sec{
+    margin: 1.5rem 0 1.5rem 0;
+}
+.feedback{
+    font-size: 1.25rem;
+    line-height: 1.4em;
+}
+.feedback-img{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 5rem;
+
+}
+.feedback-img img{
+    border-radius: 50%;
+    width:5rem;
+    height:5rem;
+}
+
+/****************************************************************************/ 
+             /*  Google Rating Section  */ 
+/****************************************************************************/ 
+
+.google-rating-sec{
+    background-color: #f3f3f3;
+}
+.google-img{
+    text-align: center;
+}
+
+/****************************************************************************/ 
+             /*  Clients We Worked With Section  */ 
+/****************************************************************************/ 
+
+.client-worked-sec {
+    background-color:#f2f1e5;
+    padding: 1.5rem 1rem 7rem 1rem;
+    position: relative;
+}
+.client-worked-sec .main-heading{
+    text-align: center;
+    /* font-size: 3rem; */
+    margin-bottom: 1.5rem;
+}
+.client-worked-sec .para{
+    text-align: center;
+}
+.logo-row {
+    margin-bottom: 2.5rem;
+}
+
+/****************************************************************************/ 
+             /*  Let us together build a flourishing business Section  */ 
+/****************************************************************************/ 
+
+.business-sec{
+    position: relative;
+    padding: 35rem 5rem 10rem 5rem;
+    background-color: #2c2927;
+}
+.business-sec h1{
+    color: #fff;
+    font-size: 3rem;
+}
+.business-sec .para{
+    color: #fff;
+    margin: 0!important;
+}
+
+/* *************** Have a Project on mind ************** */
+.sub-sec-div {
+    position: absolute;
+    top: -100px;
+    margin: 0 auto;
+    width: 72rem;
+}
+.column-1{
+    padding: 2rem;
+}
+.column-2{
+    padding-left: 0;
+    padding-right: 0;
+}
+.sub-sec-div .para{
+    color: #2c2927;
+    text-align: center;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.sub-sec-div .main-heading{
+    color: #2c2927;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.sub-sec-div .row{
+    background-color: #fbe8a6;
+}
+.sub-sec-div img{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+/* .sub-sec-div-button{ */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+/* } */
+.sub-sec-div-button button{
+    color: #2c2927;
+    height: 3rem;
+    width: 13rem;
+    margin-top: 17rem;
+    border-color: #2c2927;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+  /* text-align: center; */
+    /* padding: 1.5rem 0 2rem 0; */
+}
+/****************************************************************************/ 
+             /*  Highly Motivated Team with Innovative Ideas Section  */ 
+/****************************************************************************/ 
+
+.Ideas-sec{
+    background-color:#f2f1e5;
+    padding: 1rem;
+}
+.Ideas-sec h5 {
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #534a45;
+}
+.Ideas-sec h1{
+    font-size: 3rem;
+}
+.Ideas-sec .main-heading{
+    margin: 2rem 0 5rem 0rem;
+}
+.Ideas-sec .para{
+    margin: 4rem 0rem 0rem 6rem!important;
+}
+.Ideas-sec .heading{
+    text-align: center;
+}
+
+/* *************** Our Process************** */
+
+.process-sec .para{
+    margin: 0 0 0 0!important;
+}
+.process-sec h1{
+    font-size: 2rem;
+    margin-bottom: 0!important;
+}
+.process-sec h5{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #534a45;
+    padding-bottom: 3rem;
+}
+.process-sec i{
+    font-size: 3rem;
+    color: #69727d;
+    padding: 2rem 0 2rem 0;
+}
+
+/* *************** F.A.Q ************** */
+
+.faq-sec li{
+    font-weight: 700;
+}
+.faq-sec ul {
+    position: relative;
+    list-style: none;
+    padding-left: 1.5rem;
+  }
+  
+.faq-sec li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    font-size: 0.9rem;
+  }
+
+/* *************** Subscribe ************** */
+
+.subscribe-sec{
+    background-color: #fbe8a6;
+    padding: 0.5rem;
+    font-family: 'Poppins',sans-serif;
+}
+.sub-div{
+    display: flex;
+    justify-content: space-between;
+}
+.sub-heading {
+    font-family: 'DM Serif Display',serif;
+    font-size: 3.5rem;
+    color: #000;
+    margin-bottom: 0!important;
+    padding: 0%!important;
+    margin-top: 1rem;
+}
+.sub-form{
+    display: flex;
+}
+.sub-form input{
+    height: 4rem;
+    width: 30rem;
+    margin: 1rem 0 1rem 0!important;
+    border: none;
+    border-radius: 0;
+}
+.sub-form  button{
+    border-color: #000;
+    border-radius: 0%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+    line-height: 1rem;
+    height: 3.5rem;
+    width: 11rem;
+    margin: 1rem 0 1rem .5rem;
+}
+
+/* *************** Blog ************** */
+.blog-sec{
+    padding: 1rem;
+    background-color: #f2f1e5;
+}
+.blog-sec h5{
+    font-family: 'DM Serif Display',serif;
+    margin: 1rem 0 1.2rem 0;
+}
+.blog-sec a{
+    text-decoration: none;
+    color: #000;
+}
+.blog-list{
+    display: flex;
+    padding-bottom: 1.2rem;
+}
+.blog-info{
+    padding-left: 1rem;
+}
+.blog-link{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1rem;
+    color: #969188;
+}
+.blog-img img{
+    height: 5rem;
+    width: 5rem;
+}
+
+/****************************************************************************/ 
+                             /*  Footer */ 
+/****************************************************************************/ 
+
+.footer-sec{
+    color:#534a45;
+    margin-top: 1.5rem;
+    padding: 0 2rem 1rem 2rem;
+}
+.footer-details{
+    text-align: center;
+    padding: 5rem 0 5rem 0;
+}
+.footer-sec h5{
+    font-size: 1.2rem;
+    font-family: 'Poppins',sans-serif;
+    margin-top: 1.5rem;
+    padding: 0 2rem 0 2rem;
+    font-weight: 400;
+}
+.footer-sec h3 {
+    font-family: 'DM Serif Display',serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+.footer-sec li{
+    font-size: 1.1rem;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+    line-height: 1.7rem;
+}
+.footer-list{
+    
+}
+.footer-list ul{
+    list-style-type:none;
+    padding-left: 0;
+}
+
+.icon-sec{
+    padding: 1rem 0 1rem 0;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;  
+    align-items: center;
+    font-size: 1.2rem;
+}
+.social-media-icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #2c2927;
+}
+.social-media-icon h5{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+    margin:0!important;
+    padding-left:0.3rem;
+}
+.icon-sec p{
+    font-size: 0.9rem;
+    margin:0 0 0 10rem;
+}
+
+/****************************************************************************/ 
+                             /*  Responsive Code */ 
+/****************************************************************************/ 
+ /* 1em = 16px */
+
+@media only screen and (max-width:75em){  /* 1199px/16px = 75em  , 1199px or 75em */
+	html{
+	 font-size: 70%;
+	} 
+    .banner-heading {
+        padding: 5rem 15rem;
+    }
+    .about-us {
+        padding: 4rem 4rem 4rem 4rem;
+    }
+    .sub-sec-div {
+        top: -70px;
+        left: 140px;
+    }
+}
+@media only screen and (max-width:62em){   /* 991px or 62em */  
+        /* 991/16px = 61.87em or 62em */
+     html{
+            font-size: 60%;
+        } 
+    .sub-sec-div {
+        top: -60px;
+        left: 65px;
+        width: 80%;
+    }
+    .about-us img{
+        height: 50%;
+        width: 50%;
+    }
+}
+@media only screen and (max-width:48em){        /* 767px or 48em used for iPad */ 
+    html{
+        font-size: 55%;
+    }
+    .about-us img{
+        height: 85%;
+        width: 70%;
+    }
+    .image-sec {
+        padding: 0rem 0rem 0rem 0rem;
+    }
+}
+@media only screen and (max-width:480px){
+	html{
+		font-size:10px;
+	}
+    .sub-sec-div {
+        top: -70px;
+        left: 133px;
+    }
+}
+@media only screen and (max-width: 30em){       /* 480px or 30em */
+	html{
+		font-size:50%;
+	}
+    .banner-heading {
+        font-size: 3.3rem;
+        padding: 2rem 2rem;
+        line-height: 1;
+    }
+    .banner-para {
+        padding: 0px 0rem 0rem 21rem;
+    }
+    .find-out {
+        padding-left: 20rem;
+        padding-bottom: 0rem;
+    }
+    .choose-us {
+        padding: 5rem 3rem 2rem 3rem;
+    }
+    .hire-us {
+        padding: 3rem 3rem 3rem 3rem;
+    }
+    .card-details-sec {
+        padding: 1rem 1.5rem 1rem 0.5rem;
+    }
+    .sub-sec-div .para {
+        padding: 0;
+    }
+    .sub-sec-div {
+        top: -70px;
+        left: 65px;
+        height: -19%;
+        width: 70%;
+    }
+    .sub-sec-div-button button {
+        margin-top: 10rem;
+        width: 9rem;
+        font-size: 0.7rem;
+    }
+    .sub-form input {
+        height: 4rem;
+        width: 15rem;
+    }
+}
